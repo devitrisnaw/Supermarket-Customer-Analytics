@@ -47,7 +47,7 @@ Below is the explanation of each column in the dataset:
 
 ## Conclusion
 
-This analysis provides valuable insights to help supermarkets improve services, plan marketing strategies, and optimize inventory management. Understanding customer behavior enables better decision-making and supports overall business growth.
+This analysis provides valuable insights to help supermarkets improve plan marketing strategies,Understanding customer behavior enables better decision-making and supports overall business growth.
 
 ### Link Tableau
 https://public.tableau.com/app/profile/devi.trisnawati/viz/DashboardSuperNew/DashboardSupermarketCust?publish=yes
