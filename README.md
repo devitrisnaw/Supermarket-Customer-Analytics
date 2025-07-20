@@ -1,62 +1,53 @@
-# ANALISIS PELANGGAN SUPERMARKET
+# Supermarket Customer Analytics
 
-### LATAR BELAKANG
-Perkembangan bisnis ritel saat ini menuntut perusahaan untuk mampu memahami perilaku pelanggan secara mendalam. 
-Data transaksi yang dikumpulkan oleh supermarket mencerminkan aktivitas belanja pelanggan yang dapat diolah untuk menggali informasi penting, seperti preferensi produk, waktu pembelian favorit, dan efektivitas cabang. 
-Dengan menganalisis data pelanggan secara sistematis, supermarket dapat menyusun strategi pemasaran yang lebih tepat sasaran, meningkatkan pengalaman pelanggan, serta memaksimalkan keuntungan. 
-Oleh karena itu, diperlukan analisis data pelanggan secara menyeluruh sebagai dasar pengambilan keputusan bisnis berbasis data.
+## Background
 
-### Pernyataan Masalah
-Meskipun supermarket telah mengumpulkan berbagai data pelanggan, namun belum diketahui secara jelas:
-1. Siapa segmen pelanggan utama berdasarkan demografi seperti usia, pendidikan, dan status pernikahan?
-2. Produk atau kategori mana yang paling banyak dibeli dan memberikan kontribusi terbesar terhadap total belanja?
-3. Bagaimana pengaruh karakteristik pelanggan (seperti pendapatan dan jumlah anak) terhadap pengeluaran mereka?
-4. Seberapa efektif kampanye pemasaran yang telah dijalankan selama ini?
-5. Faktor apa saja yang memengaruhi pelanggan dalam memberikan respons terhadap promosi?
+The rapid development of the retail industry today requires companies to deeply understand customer behavior.  
+Transaction data collected by supermarkets reflects customers' shopping activities and can be processed to extract valuable insights, such as product preferences, favorite purchase times, and branch performance.  
+By systematically analyzing customer data, supermarkets can develop more targeted marketing strategies, enhance customer experience, and maximize profitability.  
+Therefore, a comprehensive customer data analysis is essential as a foundation for data-driven business decision-making.
 
-### Struktur Kolom
+## Objectives
+The goals of this project are to:
 
-1. Struktur Kolom
+- Understand customer profiles  
+- Identify the most popular product lines  
+- Discover patterns in shopping behavior  
+- Provide insights to support strategic decisions
 
-`ID` (Integer) = ID unik pelanggan
+## Tools Used
+This project was developed using the following tools:
 
-`Year_Birth` (Integer) = Tahun kelahiran pelanggan (bisa dihitung umur)
+- **Python** (Pandas, NumPy, Matplotlib, Seaborn)  
+- **Jupyter Notebook**  
 
-`Education` (Kategori) = Tingkat pendidikan (Basic, Graduation, Master, PhD, dsb.)
+## Dataset Description
+Below is the explanation of each column in the dataset:
 
-`Marital_Status` (Kategori) = Status pernikahan (Single, Married, Together, dsb.)
+- `ID` (Integer): Unique identifier for each customer  
+- `Year_Birth` (Integer): Customer's year of birth (can be used to calculate age)  
+- `Education` (Categorical): Education level (e.g., Basic, Graduation, Master, PhD, etc.)  
+- `Marital_Status` (Categorical): Marital status (e.g., Single, Married, Together, etc.)  
+- `Income` (Numeric): Annual income of the customer  
+- `Kidhome` (Integer): Number of young children at home  
+- `Teenhome` (Integer): Number of teenagers at home  
+- `Dt_Customer` (Date): Date the customer was first registered  
+- `Recency` (Integer): Days since the last purchase  
+- `MntWines`, `MntFruits`, ..., `MntGoldProds` (Integer): Amount spent on each product category (in monetary units)  
+- `NumDealsPurchases` (Integer): Number of purchases made with discounts  
+- `NumWebPurchases` (Integer): Number of purchases made through the website  
+- `NumCatalogPurchases` (Integer): Number of purchases made via catalog  
+- `NumStorePurchases` (Integer): Number of purchases made directly in store  
+- `NumWebVisitsMonth` (Integer): Number of website visits per month  
+- `AcceptedCmp1–5` (Binary: 0/1): Whether the customer responded to a specific marketing campaign  
+- `Complain` (Binary: 0/1): Whether the customer has ever lodged a complaint  
+- `Z_CostContact` (Constant): Irrelevant column with constant value; can be dropped  
+- `Z_Revenue` (Constant): Irrelevant column with constant value; can be dropped  
+- `Response` (Binary: 0/1): Whether the customer responded to the last marketing campaign
 
-`Income` (Numerik) = Pendapatan tahunan pelanggan (dalam angka)
+## Conclusion
 
-`Kidhome` (Integer) = Jumlah anak di rumah (yang berusia anak kecil)
-
-`Teenhome` (Integer) = Jumlah anak remaja di rumah (yang berusia remaja)
-
-`Dt_Customer` (Tanggal) = Tanggal pertama kali menjadi pelanggan
-
-`Recency` (Integer) = Hari sejak pembelian terakhir
-
-`MntWines`, `MntFruits`, ..., `MntGoldProds` (Integer) = Pengeluaran (dalam satuan mata uang) per kategori produk
-
-`NumDealsPurchases` (Integer) = Jumlah pembelian dengan diskon
-
-`NumWebPurchases` (Integer) = Jumlah pembelian via website
-
-`NumCatalogPurchases`(Integer) = Jumlah pembelian via katalog
-
-`NumStorePurchases` (Integer) = Jumlah pembelian langsung di toko
-
-`NumWebVisitsMonth` (Integer) = Jumlah kunjungan ke website per bulan
-
-`AcceptedCmp1–5` (Biner (0/1)) = Apakah pelanggan merespon kampanye marketing tertentu
-
-`Complain`(Biner (0/1)) = Apakah pelanggan pernah mengeluh
-
-`Z_CostContact` (Konstanta) = tidak terkait dengan kolom lainnya, sehingga dapat dihapus (semua bernilai sama)
-
-`Z_Revenue` (Konstanta) = tidak terkait dengan kolom lainnya, sehingga dapat dihapus (semua bernilai sama)
-
-`Response` (Biner (0/1)) = Apakah pelanggan merespons kampanye terakhir
+This analysis provides valuable insights to help supermarkets improve services, plan marketing strategies, and optimize inventory management. Understanding customer behavior enables better decision-making and supports overall business growth.
 
 ### Link Tableau
 https://public.tableau.com/app/profile/devi.trisnawati/viz/DashboardSuperNew/DashboardSupermarketCust?publish=yes
