@@ -60,3 +60,6 @@ Meskipun supermarket telah mengumpulkan berbagai data pelanggan, namun belum dik
 
 ### Link Tableau
 https://public.tableau.com/app/profile/devi.trisnawati/viz/DashboardSuperNew/DashboardSupermarketCust?publish=yes
+
+### Link PPT
+https://drive.google.com/file/d/1XUDaFsg9xh5bEDFuQfCf2Dr-Tna5iIeS/view?usp=sharing
